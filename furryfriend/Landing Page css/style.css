@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+.iamyourfather {
+    display: flexbox;
+}
+/* setting the background img, covering the viewport regardless of what it is */
+.main-header {
+    /* display: block; */
+    background-image: url("images/paw-background\ 53876-146422.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 400px;
+
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    /* overflow: hidden; */
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(
+        180deg,
+        rgba(102, 102, 102, 0) 20%,
+        rgba(0, 0, 0, 0.65) 100%
+    );
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* everything is separated in sections so margin should go everywhere apart from header  */
+section {
+    margin: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*  just for the headings to look the same */
+h1,
+h2 {
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(20, 132, 95);
+    padding: 20px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.intro {
+    margin: 4rem;
+    min-width: fit-content;
+    /* width:; */
+}
+/* making the emojis slightly bigger so they are visible */
+.emoji {
+    font-size: 42px;
+}
+
+/* some spacing */
+p,
+li {
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+/* making the pic round and placing  p next to it ...something to add later  
+
+.cat-dog-pic {
+    border-radius: 200px;
+    width: 20%;
+    margin-right: 20px;
+    
+}*/
+/* removing the bullet points and adding an emoji as a bullet point*/
+.why-us {
+    list-style: none;
+}
+
+ul.why-us li::before {
+    content: "🐾";
+    margin-right: 15px;
+}
+/* organising the pics of dogs */
+.the-dogs {
+    list-style: none;
+    padding: 10px;
+    overflow: hidden;
+}
+.dog-pic {
+    width: 400px;
+    display: block;
+    /* background-color: blueviolet; */
+    /* position: relative; */
+    margin-bottom: 20px;
+    align-items: right;
+    border: 2px solid rgb(20, 132, 95);
+    border-radius: 10px;
+}
+
+/* some styling on the form itself and input fields */
+.form {
+    border-radius: 5px;
+    background-color: rgba(59, 152, 122, 0.999);
+    padding: 50px;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+
+    min-width: fit-content;
+    max-width: 40%;
+}
+
+input,
+textarea {
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+form > label {
+    width: 19%;
+    min-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+}
+
+button {
+    border-radius: 4px;
+    width: 60%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 0, auto;
+
+    background-color: rgb(20, 132, 95);
+    color: whitesmoke;
+}
+button:hover {
+    color: black;
+}
+
+button:link {
+    text-decoration: none;
+}
+button:active {
+    text-decoration: none;
+    background-color: rgba(59, 152, 122, 0.999);
+}
+
+.submitWrapper {
+    display: inline-block;
+    width: 75%;
+}
+
+footer {
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(59, 152, 122, 0.999);
+    color: bisque;
+}
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+    CSS rules for extra small screens 
+}
+
+ Small devices (portrait tablets and large phones, 600px to 768px) 
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* CSS rules for small screens
+}
+
+ Medium devices (landscape tablets, 768px to 992px) 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* CSS rules for medium screens 
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) 
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* CSS rules for large screens 
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1201px) {
+    /* CSS rules for extra large screens 
+} 
+
+*/
